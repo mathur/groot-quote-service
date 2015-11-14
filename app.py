@@ -60,6 +60,6 @@ def delete(quote_id):
     #return success json
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 80))
+    port = int(os.environ.get("PORT", 5000))
     db.init_app(app)
     app.run(host='0.0.0.0', port=port, debug=True)
